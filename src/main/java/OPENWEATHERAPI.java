@@ -10,7 +10,7 @@ public class OPENWEATHERAPI extends API_DATA{
     private int temp;
     private String location = "München";
     private final static String forecastLink = "https://pro.openweathermap.org/data/2.5/forecast/hourly";
-    private final static String apiKey = "da8131e2cfb98a485a2298b3d16515a4";
+    private final static String apiKey = "";
     public OPENWEATHERAPI() throws IOException, InterruptedException {
         super();
     }
