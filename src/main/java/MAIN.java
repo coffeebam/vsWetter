@@ -1,5 +1,3 @@
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.net.http.HttpResponse;
 
@@ -14,7 +12,9 @@ public class MAIN {
         m.fetchData();
     }
     public void fetchData() throws IOException, InterruptedException {
-        PLACEHOLDERAPI placeholderapi = new PLACEHOLDERAPI();
-        placeholderapi.getData();
+        WETTERCOMAPI wettercom = new WETTERCOMAPI();
+        wettercom.getData();
+        OPENWEATHERAPI openweather = new OPENWEATHERAPI();
+        openweather.getData();
     }
 }
