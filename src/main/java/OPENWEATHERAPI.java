@@ -1,6 +1,5 @@
-import org.json.JSONArray;
 import org.json.JSONObject;
-import javax.swing.*;
+
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.net.URI;
@@ -9,10 +8,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class OPENWEATHERAPI extends API_DATA{
-    private BigDecimal temp;
+    private double maxTemp;
+    private double minTemp;
     private String location = "München";
     private final static String forecastLink = "https://api.openweathermap.org/data/2.5/onecall";
-    private final static String apiKey = "da8131e2cfb98a485a2298b3d16515a4";
+    private final static String apiKey = UTIL.getKey("openweather");
     public OPENWEATHERAPI() throws IOException, InterruptedException {
         super();
     }
@@ -28,7 +28,6 @@ public class OPENWEATHERAPI extends API_DATA{
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.statusCode());
-        System.out.println(response.body());
         return new JSONObject(response.body());
     }
 
@@ -38,7 +37,10 @@ public class OPENWEATHERAPI extends API_DATA{
     }
     public void getData() throws IOException, InterruptedException {
         JSONObject json = this.readJson();
-        temp = UTIL.kelvinToCelsius(BigDecimal.valueOf(json.getJSONObject("current").getDouble("temp"))); //temp von api abfragen und Kelvin in Celsius umwandeln
-        System.out.println(temp);
+        //System.out.println(json.toString());
+        int day = 1;
+        maxTemp = UTIL.kelvinToCelsius(BigDecimal.valueOf(json.getJSONArray("daily").getJSONObject(day).getJSONObject("temp").getDouble("max"))); //temp von api abfragen und Kelvin in Celsius umwandeln
+        minTemp = UTIL.kelvinToCelsius(BigDecimal.valueOf(json.getJSONArray("daily").getJSONObject(day).getJSONObject("temp").getDouble("min"))); //temp von api abfragen und Kelvin in Celsius umwandeln
+        System.out.println(minTemp);
     }
 }

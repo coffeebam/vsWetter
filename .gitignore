@@ -3,7 +3,7 @@
 
 # Log file
 *.log
-
+apikey.properties
 # BlueJ files
 *.ctxt
 

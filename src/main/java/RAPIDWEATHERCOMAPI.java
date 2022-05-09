@@ -1,4 +1,3 @@
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -7,14 +6,13 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class WETTERCOMAPI extends API_DATA{
-    private static final String url = "https://jsonplaceholder.typicode.com/posts/";
+public class RAPIDWEATHERCOMAPI extends API_DATA{
     private int temp;
     private String location = "München";
     private final static String forecastLink = "https://forecast9.p.rapidapi.com/rapidapi/forecast/";
     private final static String host = "forecast9.p.rapidapi.com";
-    private final static String apiKey = "33f8bc29f1msh2ec4ebff8006b70p16580fjsnd54ebb120aa7 ";
-    public WETTERCOMAPI() throws IOException, InterruptedException {
+    private final static String apiKey = UTIL.getKey("weathercom");
+    public RAPIDWEATHERCOMAPI() throws IOException, InterruptedException {
         super();
     }
 
