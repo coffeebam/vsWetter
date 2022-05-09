@@ -13,7 +13,7 @@ public class WETTERCOMAPI extends API_DATA{
     private String location = "München";
     private final static String forecastLink = "https://forecast9.p.rapidapi.com/rapidapi/forecast/";
     private final static String host = "forecast9.p.rapidapi.com";
-    private final static String apiKey = "33f8bc29f1msh2ec4ebff8006b70p16580fjsnd54ebb120aa7";
+    private final static String apiKey = "33f8bc29f1msh2ec4ebff8006b70p16580fjsnd54ebb120aa7 ";
     public WETTERCOMAPI() throws IOException, InterruptedException {
         super();
     }
@@ -28,7 +28,7 @@ public class WETTERCOMAPI extends API_DATA{
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.statusCode());
-        return new JSONObject(response);
+        return new JSONObject(response.body());
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {

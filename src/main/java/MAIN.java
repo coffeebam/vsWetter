@@ -1,19 +1,17 @@
 import java.io.IOException;
-import java.net.http.HttpResponse;
 
 public class MAIN {
-    private HttpResponse<String> response;
 
-    public MAIN() throws IOException, InterruptedException {
+    public MAIN(){
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
         MAIN m = new MAIN();
         m.fetchData();
     }
-    public void fetchData() throws IOException, InterruptedException {
+    public void fetchData() throws IOException, InterruptedException { //APIS initialisieren und Daten abfragen
         WETTERCOMAPI wettercom = new WETTERCOMAPI();
-        wettercom.getData();
+        //wettercom.getData();
         OPENWEATHERAPI openweather = new OPENWEATHERAPI();
         openweather.getData();
     }
