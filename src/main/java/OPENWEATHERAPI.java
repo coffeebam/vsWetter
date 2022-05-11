@@ -43,4 +43,7 @@ public class OPENWEATHERAPI extends API_DATA{
         minTemp = UTIL.kelvinToCelsius(BigDecimal.valueOf(json.getJSONArray("daily").getJSONObject(day).getJSONObject("temp").getDouble("min"))); //temp von api abfragen und Kelvin in Celsius umwandeln
         System.out.println(minTemp);
     }
+
+    public double getMinTemp() {return minTemp;}
+    public double getMaxTemp() {return maxTemp;}
 }

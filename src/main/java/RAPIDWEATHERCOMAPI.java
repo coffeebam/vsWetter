@@ -34,7 +34,9 @@ public class RAPIDWEATHERCOMAPI extends API_DATA{
 
     }
     public void getData() throws IOException, InterruptedException {
-        JSONObject json = this.readJson();
+        //JSONObject json = this.readJson();
+        JSONObject json = new JSONObject();
         System.out.println(json);
+        temp = json.getJSONObject()
     }
 }

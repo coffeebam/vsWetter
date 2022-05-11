@@ -43,4 +43,8 @@ public class RAPIDWEATHERAPI extends API_DATA{
         }
 
     }
+
+    public double[] getTemp() {
+        return temp;
+    }
 }

@@ -1,15 +1,8 @@
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 
 import java.io.*;
-import java.net.URI;
-import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
 
 public abstract class API_DATA {
     private double temp;
@@ -24,7 +17,6 @@ public abstract class API_DATA {
     }
 
     public abstract JSONObject readJson() throws IOException, InterruptedException;
-    public double getTemp(){return temp;}
     public double getRegenWahrscheinlichkeit(){return regenWahrscheinlichkeit;}
     public String getName(){return name;}
     public String getUrl(){return url;}
