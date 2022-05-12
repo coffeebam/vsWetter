@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="flat laf funtkioniert -&gt; multi window coden (aber jetzt: AB INS BETT!)" />
+    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="flat laf funtkioniert -&gt; multi window coden (aber jetzt: AB INS BETT!)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/LAYOUT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME1.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME1.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Blitz.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Blitz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Blitz.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Blitz.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652309328551</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="flat laf funtkioniert -&gt; multi window coden (aber jetzt: AB INS BETT!)">
+      <created>1652381995482</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652381995482</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
