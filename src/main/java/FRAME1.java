@@ -5,6 +5,7 @@ public class FRAME1 extends JFrame {
     private JPanel panel1;
     private JTable leaderboard;
 
+    //als singleton programmieren
     public FRAME1(){
         setContentPane(panel1);
         leaderboard.addColumn(new TableColumn(1, 50));
