@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="flat laf funtkioniert -&gt; multi window coden (aber jetzt: AB INS BETT!)">
-      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME1.java" afterDir="false" />
+    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="cardLayout ich blick parent nicht">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LAYOUT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +38,7 @@
     </option>
   </component>
   <component name="ProjectId" id="292Kye2VQnCDxBWQIn7yC8eRH8b" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
