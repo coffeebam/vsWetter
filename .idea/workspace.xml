@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="cardLayout ich blick parent nicht">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="verschiedene pages funktionieren &#10;TO-DO: layout für überblick + wetter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LAYOUT.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +47,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="128" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="334" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\elias\OneDrive\Documents\privat\Programmieren\vsWetter\src\main\resources" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.MAIN">
     <configuration name="FRAME0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -95,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652381995482</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="verschiedene pages funktionieren &#10;TO-DO: layout für überblick + wetter">
+      <created>1652996124094</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652996124094</updated>
+    </task>
+    <task id="LOCAL-00004" summary="verschiedene pages funktionieren &#10;TO-DO: layout für überblick + wetter">
+      <created>1652996132239</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652996132239</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="flat laf funtkioniert -&gt; multi window coden (aber jetzt: AB INS BETT!)" />
-    <option name="LAST_COMMIT_MESSAGE" value="flat laf funtkioniert -&gt; multi window coden (aber jetzt: AB INS BETT!)" />
+    <MESSAGE value="verschiedene pages funktionieren &#10;TO-DO: layout für überblick + wetter" />
+    <option name="LAST_COMMIT_MESSAGE" value="verschiedene pages funktionieren &#10;TO-DO: layout für überblick + wetter" />
   </component>
 </project>

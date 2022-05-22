@@ -20,6 +20,9 @@ public class FRAME0 extends JFrame{
     private JLabel first;
     private JLabel second;
     private JLabel third;
+    private JLabel firstAvgTemp;
+    private JLabel secondAvgTemp;
+    private JLabel thirdAvgTemp;
     private JTable table;
     private final Color grau = new Color(60, 63, 65);
 
@@ -55,6 +58,9 @@ public class FRAME0 extends JFrame{
         overviewBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                overviewBtn.setBackground(Color.GRAY);
+                leaderboardBtn.setBackground(Color.LIGHT_GRAY);
+                weatherBtn.setBackground(Color.LIGHT_GRAY);
                 überblick.setVisible(true);
                 leaderboard.setVisible(false);
                 wetter.setVisible(false);
@@ -65,7 +71,9 @@ public class FRAME0 extends JFrame{
         leaderboardBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                overviewBtn.setBackground(Color.LIGHT_GRAY);
+                leaderboardBtn.setBackground(Color.GRAY);
+                weatherBtn.setBackground(Color.LIGHT_GRAY);
                 überblick.setVisible(false);
                 leaderboard.setVisible(true);
                 wetter.setVisible(false);
@@ -79,6 +87,9 @@ public class FRAME0 extends JFrame{
         weatherBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                overviewBtn.setBackground(Color.LIGHT_GRAY);
+                leaderboardBtn.setBackground(Color.LIGHT_GRAY);
+                weatherBtn.setBackground(Color.GRAY);
                 überblick.setVisible(false);
                 leaderboard.setVisible(false);
                 wetter.setVisible(true);
@@ -105,7 +116,9 @@ public class FRAME0 extends JFrame{
         table = new JTable(tableInhalt, kopfzeile);
         table.setBackground(grau);
         table.setForeground(Color.LIGHT_GRAY);
-        table.removeEditor();
+        table.setShowGrid(true);
 
     }
+
+
 }
