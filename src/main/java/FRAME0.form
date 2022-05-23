@@ -23,6 +23,7 @@
           <component id="202b" class="javax.swing.JButton" binding="overviewBtn">
             <constraints/>
             <properties>
+              <font size="14" style="0"/>
               <text value="Überblick"/>
             </properties>
           </component>
@@ -32,6 +33,7 @@
           <component id="f451a" class="javax.swing.JButton" binding="leaderboardBtn">
             <constraints/>
             <properties>
+              <font size="14"/>
               <horizontalTextPosition value="0"/>
               <text value="Leaderboard"/>
               <verticalAlignment value="0"/>
@@ -44,6 +46,7 @@
           <component id="e178e" class="javax.swing.JButton" binding="weatherBtn">
             <constraints/>
             <properties>
+              <font size="14" style="0"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
               <text value="Wetter"/>
@@ -85,7 +88,7 @@
               </vspacer>
             </children>
           </grid>
-          <grid id="9418d" binding="leaderboard" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="9418d" binding="leaderboard" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -93,143 +96,50 @@
             <properties/>
             <border type="none"/>
             <children>
-              <grid id="d4b1b" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                <margin top="0" left="0" bottom="0" right="0"/>
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children>
-                  <component id="219bb" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="1."/>
-                    </properties>
-                  </component>
-                  <component id="488b1" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="2."/>
-                    </properties>
-                  </component>
-                  <component id="9807c" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="3."/>
-                    </properties>
-                  </component>
-                  <component id="ccb7c" class="javax.swing.JLabel" binding="first">
-                    <constraints>
-                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="7cb74" class="javax.swing.JLabel" binding="second">
-                    <constraints>
-                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="2ae78" class="javax.swing.JLabel" binding="third">
-                    <constraints>
-                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Label"/>
-                    </properties>
-                  </component>
-                  <component id="b09a7" class="javax.swing.JLabel" binding="firstAvgTemp">
-                    <constraints>
-                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="firstAvgTemp"/>
-                    </properties>
-                  </component>
-                  <component id="49d53" class="javax.swing.JLabel" binding="secondAvgTemp">
-                    <constraints>
-                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="secondAvgTemp"/>
-                    </properties>
-                  </component>
-                  <component id="39c04" class="javax.swing.JLabel" binding="thirdAvgTemp">
-                    <constraints>
-                      <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="thirdAvgTemp"/>
-                    </properties>
-                  </component>
-                  <component id="40b3" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Name"/>
-                    </properties>
-                  </component>
-                  <component id="b80b" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Durchschnittliche Temp Abweichung"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
               <vspacer id="c037c">
                 <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
               <hspacer id="be91">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
               <hspacer id="456cb">
                 <constraints>
-                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="157dc" class="javax.swing.JLabel">
+              <scrollpane id="24614">
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <background color="-14868435"/>
-                  <font name="Arial Black" size="24"/>
-                  <horizontalAlignment value="0"/>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Leaderboard"/>
+                  <background color="-12828863"/>
+                  <font name="Arial Black" size="16"/>
+                  <foreground color="-1"/>
+                  <opaque value="true"/>
+                  <verifyInputWhenFocusTarget value="false"/>
                 </properties>
-              </component>
-              <component id="394bf" class="javax.swing.JTable" binding="table">
-                <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="50"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <foreground color="-16777216"/>
-                  <gridColor color="-16777216"/>
-                  <showVerticalLines value="true"/>
-                </properties>
-              </component>
+                <border type="none"/>
+                <children>
+                  <component id="394bf" class="javax.swing.JTable" binding="table" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <autoCreateRowSorter value="true"/>
+                      <autoResizeMode value="2"/>
+                      <font/>
+                      <foreground color="-1"/>
+                      <gridColor color="-13618369"/>
+                      <requestFocusEnabled value="false"/>
+                      <rowSelectionAllowed value="false"/>
+                      <showVerticalLines value="true"/>
+                      <verifyInputWhenFocusTarget value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
             </children>
           </grid>
           <grid id="ba42d" binding="wetter" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

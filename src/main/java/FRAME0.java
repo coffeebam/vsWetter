@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,12 +18,6 @@ public class FRAME0 extends JFrame{
     private JPanel überblick;
     private JPanel leaderboard;
     private JPanel wetter;
-    private JLabel first;
-    private JLabel second;
-    private JLabel third;
-    private JLabel firstAvgTemp;
-    private JLabel secondAvgTemp;
-    private JLabel thirdAvgTemp;
     private JTable table;
     private final Color grau = new Color(60, 63, 65);
 
@@ -41,7 +36,7 @@ public class FRAME0 extends JFrame{
         ImageIcon mainIcon = new ImageIcon("src/main/resources/Blitz.png");
         setIconImage(mainIcon.getImage());
 
-        //navigationsleist grauer hintergrund
+        //navigationsleiste grauer hintergrund
         bar.setBackground(Color.LIGHT_GRAY);
 
         //knöpfe auf leiste lesbar
@@ -104,21 +99,29 @@ public class FRAME0 extends JFrame{
         return frame0;
     }
 
-    public void showLeaderboard(){
-        page.add(new JTable());
-
-    }
-
 
     private void createUIComponents() {
-        String[][] tableInhalt = {{"1.", "[bsp] openweather.com"}, {"2.", "[bsp] rapidweather.com"}};
+        String[][] tableInhalt = {
+                {"1.", "[bsp] openweather.com"},
+                {"2.", "[bsp] rapidweather.com"}
+        };
         String[] kopfzeile = {"Pos", "Anbieter"};
-        table = new JTable(tableInhalt, kopfzeile);
-        table.setBackground(grau);
-        table.setForeground(Color.LIGHT_GRAY);
-        table.setShowGrid(true);
+        table = new JTable(tableInhalt, kopfzeile) {
+            @Override
+            public boolean isCellEditable(int row, int column){
+                return false;
+            }
+        };
+        Font font = new Font("Arial Black", Font.PLAIN, 13);
+        JTableHeader tableHeader = table.getTableHeader();
+        tableHeader.setFont(font);
+        tableHeader.setBackground(grau);
+        tableHeader.setForeground(Color.LIGHT_GRAY);
+        table.getColumn("Pos").setMaxWidth(50);
+        table.setGridColor(Color.DARK_GRAY);
 
     }
+
 
 
 }
