@@ -9,6 +9,7 @@ public class MAIN {
         //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
         FRAME0 frame0 = FRAME0.getFrame0();
         //"com.sun.java.swing.plaf.windows.WindowsLookAndFeel"
-        GraphicsEnvironment printImg;
+
+
     }
 }

@@ -14,12 +14,12 @@ public class FRAME0 extends JFrame{
     private JButton leaderboardBtn;
     private JButton overviewBtn;
     private JButton weatherBtn;
-    private JPanel page;
     private JPanel überblick;
     private JPanel leaderboard;
     private JPanel wetter;
     private JTable table;
-    private final Color grau = new Color(60, 63, 65);
+    private JPanel page;
+    private static final Color grau = new Color(60, 63, 65);
 
     private FRAME0(){
         //setzt anzeigefläche
@@ -48,8 +48,12 @@ public class FRAME0 extends JFrame{
         überblick.setVisible(true);
         leaderboard.setVisible(false);
         wetter.setVisible(false);
+        overviewBtn.setBackground(Color.GRAY);
+        leaderboardBtn.setBackground(Color.LIGHT_GRAY);
+        weatherBtn.setBackground(Color.LIGHT_GRAY);
 
-        setVisible(true);
+
+
         overviewBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -61,6 +65,9 @@ public class FRAME0 extends JFrame{
                 wetter.setVisible(false);
             }
         });
+
+
+
 
         //alles für das leaderboard
         leaderboardBtn.addActionListener(new ActionListener() {
@@ -74,9 +81,8 @@ public class FRAME0 extends JFrame{
                 wetter.setVisible(false);
             }
         });
-        //erstellt Tabelle
-        //createUIComponents();
-        //table.setVisible(true);
+
+
 
 
         weatherBtn.addActionListener(new ActionListener() {
@@ -90,8 +96,12 @@ public class FRAME0 extends JFrame{
                 wetter.setVisible(true);
             }
         });
+
+        //frame sichtbar
+        setVisible(true);
     }
 
+    //getFrame() für Singleton
     public static FRAME0 getFrame0(){
         if(frame0 == null){
             frame0 = new FRAME0();
@@ -100,12 +110,14 @@ public class FRAME0 extends JFrame{
     }
 
 
+
+//Tabelle wird erstellt und mit Werten belegt
     private void createUIComponents() {
         String[][] tableInhalt = {
-                {"1.", "[bsp] openweather.com"},
-                {"2.", "[bsp] rapidweather.com"}
+                {"1.", "[bsp] openweather.com", "0,5°C / 6mm"},
+                {"2.", "[bsp] rapidweather.com", "0,7°C / 10mm"}
         };
-        String[] kopfzeile = {"Pos", "Anbieter"};
+        String[] kopfzeile = {"Pos", "Anbieter", "Avg Abweichung"};
         table = new JTable(tableInhalt, kopfzeile) {
             @Override
             public boolean isCellEditable(int row, int column){
