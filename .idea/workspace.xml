@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="JTable verstehen">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_16_2022_10_15_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_16_2022_10_15_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
-    </list>
+    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="ragequit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653253372300</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ragequit">
+      <created>1653423924187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653423924187</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +150,7 @@
     <MESSAGE value="flat laf funtkioniert -&gt; multi window coden (aber jetzt: AB INS BETT!)" />
     <MESSAGE value="verschiedene pages funktionieren &#10;TO-DO: layout für überblick + wetter" />
     <MESSAGE value="JTable verstehen" />
-    <option name="LAST_COMMIT_MESSAGE" value="JTable verstehen" />
+    <MESSAGE value="ragequit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ragequit" />
   </component>
 </project>
