@@ -68,7 +68,6 @@ public class FRAME0 extends JFrame{
 
 
 
-
         //alles für das leaderboard
         leaderboardBtn.addActionListener(new ActionListener() {
             @Override
@@ -98,6 +97,7 @@ public class FRAME0 extends JFrame{
         });
 
         //frame sichtbar
+        pack();
         setVisible(true);
     }
 
@@ -132,6 +132,12 @@ public class FRAME0 extends JFrame{
         table.getColumn("Pos").setMaxWidth(50);
         table.setGridColor(Color.DARK_GRAY);
 
+
+        //-----------------------------------------------------------------------------
+        //JPanel Überblick custom create:
+
+
+        überblick.add(new PLOTTER());
     }
 
 
