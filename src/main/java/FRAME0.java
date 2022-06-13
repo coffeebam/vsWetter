@@ -66,7 +66,7 @@ public class FRAME0 extends JFrame{
             }
         });
 
-
+        überblick.add(new PLOTTER());
 
         //alles für das leaderboard
         leaderboardBtn.addActionListener(new ActionListener() {
@@ -97,7 +97,7 @@ public class FRAME0 extends JFrame{
         });
 
         //frame sichtbar
-        pack();
+
         setVisible(true);
     }
 
@@ -137,7 +137,7 @@ public class FRAME0 extends JFrame{
         //JPanel Überblick custom create:
 
 
-        überblick.add(new PLOTTER());
+        //überblick.add(new PLOTTER());
     }
 
 
