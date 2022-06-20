@@ -18,7 +18,7 @@ public static String getKey(String key) {
     try {
         Properties prop = new Properties();
 
-        is = new FileInputStream(new File("/Users/jonas/IdeaProjects/vsWetter/ressources/apikey.properties")
+        is = new FileInputStream(new File("/Users/jonas/Documents/coding/apikey.properties")
                 .toString());
         prop.load(is);
         return prop.getProperty(key);

@@ -5,6 +5,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Arrays;
 
 public class RAPIDWEATHERAPI extends API_DATA{
     private double[] temp = new double[24];
@@ -39,8 +40,8 @@ public class RAPIDWEATHERAPI extends API_DATA{
         int day = 1;
         for(int i = 0; i < 24; i++) {
             temp[i] = json.getJSONObject("forecast").getJSONArray("forecastday").getJSONObject(day).getJSONArray("hour").getJSONObject(i).getDouble("temp_c"); //Temperatur vom nächsten TAg.
-            System.out.println(temp[i]);
         }
+        System.out.println(Arrays.toString(temp));
 
     }
 

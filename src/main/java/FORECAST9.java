@@ -6,13 +6,13 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class RAPIDWEATHERCOMAPI extends API_DATA{
+public class FORECAST9 extends API_DATA{
     private int temp;
     private String location = "München";
     private final static String forecastLink = "https://forecast9.p.rapidapi.com/rapidapi/forecast/";
     private final static String host = "forecast9.p.rapidapi.com";
-    private final static String apiKey = UTIL.getKey("weathercom");
-    public RAPIDWEATHERCOMAPI() throws IOException, InterruptedException {
+    private final static String apiKey = UTIL.getKey("forecast9");
+    public FORECAST9() throws IOException, InterruptedException {
         super();
     }
 
@@ -36,7 +36,6 @@ public class RAPIDWEATHERCOMAPI extends API_DATA{
     public void getData() throws IOException, InterruptedException {
         //JSONObject json = this.readJson();
         JSONObject json = new JSONObject();
-        System.out.println(json);
-        temp = json.getJSONObject()
+        //temp = json.getJSONObject();
     }
 }
