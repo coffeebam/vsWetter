@@ -19,6 +19,7 @@ public class FRAME0 extends JFrame{
     private JPanel wetter;
     private JTable table;
     private JPanel page;
+    private JPanel xAchse;
     private static final Color grau = new Color(60, 63, 65);
 
     private FRAME0(){

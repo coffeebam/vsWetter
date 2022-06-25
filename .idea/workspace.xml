@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="Plotter in JPanel hinzufügen; wie funktioniert custom create?">
+    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="ragequit">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/transparent test.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PLOTTER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PLOTTER.java" afterDir="false" />
@@ -44,14 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="128" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="334" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+  </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elias\OneDrive\Documents\privat\Programmieren\vsWetter\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\elias\OneDrive\Documents\privat\Programmieren\vsWetter\src\main\resources" />
     </key>
@@ -78,17 +83,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PLOTTER" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PLOTTER" />
-      <module name="vsWetter" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MAIN" />
-        <item itemvalue="Application.PLOTTER" />
         <item itemvalue="Application.GraphicsDemo" />
         <item itemvalue="Application.FRAME0" />
       </list>
@@ -145,14 +142,7 @@
       <option name="project" value="LOCAL" />
       <updated>1653423924187</updated>
     </task>
-    <task id="LOCAL-00007" summary="Plotter in JPanel hinzufügen; wie funktioniert custom create?">
-      <created>1654725730644</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1654725730644</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +162,6 @@
     <MESSAGE value="verschiedene pages funktionieren &#10;TO-DO: layout für überblick + wetter" />
     <MESSAGE value="JTable verstehen" />
     <MESSAGE value="ragequit" />
-    <MESSAGE value="Plotter in JPanel hinzufügen; wie funktioniert custom create?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plotter in JPanel hinzufügen; wie funktioniert custom create?" />
+    <option name="LAST_COMMIT_MESSAGE" value="ragequit" />
   </component>
 </project>
