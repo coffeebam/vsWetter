@@ -31,7 +31,7 @@ public class PLOTTER extends JPanel {
         String name = "test";
         String name1 = "test1";
 
-        DefaultDefaultDataset dataset = new DefaultDefaultDataset();
+        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
         dataset.addValue(5, name, "1.7.");
         dataset.addValue(3, name, "2.7.");
