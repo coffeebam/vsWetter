@@ -1,4 +1,8 @@
+import com.formdev.flatlaf.FlatDarculaLaf;
+import org.jfree.chart.ChartPanel;
+
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicPanelUI;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import java.awt.*;
@@ -19,7 +23,6 @@ public class FRAME0 extends JFrame{
     private JPanel wetter;
     private JTable table;
     private JPanel page;
-    private JPanel xAchse;
     private static final Color grau = new Color(60, 63, 65);
 
     private FRAME0(){
@@ -67,7 +70,14 @@ public class FRAME0 extends JFrame{
             }
         });
 
-        überblick.add(new PLOTTER());
+        überblick.setLayout(new java.awt.BorderLayout());
+        PLOTTER plotter = new PLOTTER();
+        ChartPanel chartPanel = new ChartPanel(plotter.getChart());
+        chartPanel.setMouseWheelEnabled(true);
+        chartPanel.setBackground(grau);
+        chartPanel.setForeground(grau);
+        überblick.add(chartPanel, BorderLayout.CENTER);
+        überblick.validate();
 
         //alles für das leaderboard
         leaderboardBtn.addActionListener(new ActionListener() {
