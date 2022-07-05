@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="JFreeChart installiert">
+    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="a">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfree_chart.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/json-simple-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testdata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_25_2022_6_53_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_25_2022_6_53_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PLOTTER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PLOTTER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Blitz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Blitz.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +57,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="128" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="334" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />

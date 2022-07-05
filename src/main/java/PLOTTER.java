@@ -1,8 +1,14 @@
-import java.awt.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 
 import org.jfree.chart.*;
 import org.jfree.data.category.DefaultCategoryDataset;
-import org.jfree.data.xy.DefaultXYDataset;
+
+import java.io.*;
+import java.util.*;
+import org.json.simple.*;
+import org.json.simple.parser.*;
 
 import javax.swing.*;
 
@@ -11,7 +17,7 @@ public class PLOTTER extends JPanel {
     private static final long serialVersionUID = 1L;
     private static JFreeChart chart;
 
-    public PLOTTER(){
+    public PLOTTER() throws IOException, ParseException {
 
         DefaultCategoryDataset dataset = createDataset();
         this.chart = ChartFactory.createLineChart("Temperatur Abweichung", "Datum", "Temperatur in Grad Celsius", dataset);
@@ -19,14 +25,14 @@ public class PLOTTER extends JPanel {
 
 
 
-    public  JFreeChart getChart(){
+    public JFreeChart getChart() throws IOException, ParseException {
         new PLOTTER();
         return this.chart;
     }
 
     //https://www.javatpoint.com/jfreechart-line-chart
 
-    private DefaultCategoryDataset createDataset(){
+    private DefaultCategoryDataset createDataset() throws IOException, ParseException {
 
         String name = "test";
         String name1 = "test1";
@@ -58,8 +64,30 @@ public class PLOTTER extends JPanel {
         dataset.addValue(3, name1, "6.7.");
         dataset.addValue(3, name1, "5.7.");
 
+        try {
+            JSONParser parser = new JSONParser();
+            Object obj = parser.parse(new FileReader("src/main/resources/testdata.json"));
+            JSONObject jsonObject = (JSONObject) obj;
+            JSONArray deviationArray = (JSONArray) jsonObject.get("hours");
+            Double deviation = (Double) deviationArray.get(0);
+            System.out.println(deviation);
+        }
+        catch(FileNotFoundException fe)
+            {
+                fe.printStackTrace();
+            }
+        catch(Exception e)
+            {
+                e.printStackTrace();
+            }
+
+
+
         return dataset;
     }
 
+    public static void main(String[] args) throws IOException, ParseException {
+        PLOTTER plotter = new PLOTTER();
+    }
 
 }

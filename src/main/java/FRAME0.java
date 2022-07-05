@@ -1,6 +1,8 @@
 import com.formdev.flatlaf.FlatDarculaLaf;
+import com.orsoncharts.util.json.parser.ParseException;
 import org.jfree.chart.ChartPanel;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicPanelUI;
 import javax.swing.table.JTableHeader;
@@ -8,6 +10,8 @@ import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 
 public class FRAME0 extends JFrame{
 
@@ -23,9 +27,10 @@ public class FRAME0 extends JFrame{
     private JPanel wetter;
     private JTable table;
     private JPanel page;
+    private JLabel iconTest;
     private static final Color grau = new Color(60, 63, 65);
 
-    private FRAME0(){
+    private FRAME0() throws IOException, ParseException, org.json.simple.parser.ParseException {
         //setzt anzeigefläche
         setContentPane(panel0);
 
@@ -37,7 +42,7 @@ public class FRAME0 extends JFrame{
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         //Programmicon
-        ImageIcon mainIcon = new ImageIcon("src/main/resources/Blitz.png");
+        ImageIcon mainIcon = new ImageIcon("src/main/resources/Icon.png");
         setIconImage(mainIcon.getImage());
 
         //navigationsleiste grauer hintergrund
@@ -113,7 +118,7 @@ public class FRAME0 extends JFrame{
     }
 
     //getFrame() für Singleton
-    public static FRAME0 getFrame0(){
+    public static FRAME0 getFrame0() throws IOException, ParseException, org.json.simple.parser.ParseException {
         if(frame0 == null){
             frame0 = new FRAME0();
         }
