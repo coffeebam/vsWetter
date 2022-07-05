@@ -1,0 +1,34 @@
+{
+	"forecasts":[
+		{
+		"day":"2022-06-26",
+		"hours":[
+		{
+			"deviations":{
+				"tempw3":2.5,
+				"tempML":2,
+				"openweather":3,
+				"rapidweather":2.5
+			}
+			},
+			{
+			"deviations":{
+				"tempw3":2.5,
+				"tempML":2,
+				"openweather":3,
+				"rapidweather":2.5
+			}
+			},
+			{
+			"deviations":{
+				"tempw3":2.5,
+				"tempML":2,
+				"openweather":3,
+				"rapidweather":2.5
+			}
+			}
+
+		]
+		}
+	]
+}
