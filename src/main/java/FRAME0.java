@@ -1,16 +1,11 @@
-import com.formdev.flatlaf.FlatDarculaLaf;
 import com.orsoncharts.util.json.parser.ParseException;
 import org.jfree.chart.ChartPanel;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicPanelUI;
 import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.IOException;
 
 public class FRAME0 extends JFrame{
@@ -27,14 +22,16 @@ public class FRAME0 extends JFrame{
     private JPanel wetter;
     private JTable table;
     private JPanel page;
-    private JLabel iconTest;
+    private JPanel datumJPanel;
+    private JPanel chartJPanel;
+    private JLabel datumLabel;
     private static final Color grau = new Color(60, 63, 65);
 
     private FRAME0() throws IOException, ParseException, org.json.simple.parser.ParseException {
         //setzt anzeigefläche
         setContentPane(panel0);
 
-        Dimension size = new Dimension(500, 500);
+        Dimension size = new Dimension(600, 500);
         setSize(size);
         setLocation(1000, 500);
 
@@ -75,14 +72,15 @@ public class FRAME0 extends JFrame{
             }
         });
 
-        überblick.setLayout(new java.awt.BorderLayout());
+        chartJPanel.setLayout(new java.awt.BorderLayout());
         PLOTTER plotter = new PLOTTER();
         ChartPanel chartPanel = new ChartPanel(plotter.getChart());
         chartPanel.setMouseWheelEnabled(true);
         chartPanel.setBackground(grau);
         chartPanel.setForeground(grau);
-        überblick.add(chartPanel, BorderLayout.CENTER);
-        überblick.validate();
+        chartJPanel.add(chartPanel, BorderLayout.CENTER);
+        datumLabel.setText("Abweichung am: " + plotter.datum);
+        chartJPanel.validate();
 
         //alles für das leaderboard
         leaderboardBtn.addActionListener(new ActionListener() {
@@ -128,11 +126,10 @@ public class FRAME0 extends JFrame{
 
 
 //Tabelle wird erstellt und mit Werten belegt
-    private void createUIComponents() {
-        String[][] tableInhalt = {
-                {"1.", "[bsp] openweather.com", "0,5°C / 6mm"},
-                {"2.", "[bsp] rapidweather.com", "0,7°C / 10mm"}
-        };
+    private void createUIComponents() throws IOException, org.json.simple.parser.ParseException {
+        PLOTTER plotter = new PLOTTER();
+        String[][] tableInhalt = plotter.getTable();
+
         String[] kopfzeile = {"Pos", "Anbieter", "Avg Abweichung"};
         table = new JTable(tableInhalt, kopfzeile) {
             @Override

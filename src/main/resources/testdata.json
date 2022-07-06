@@ -6,28 +6,195 @@
         {
           "deviations":{
             "tempw3":2.5,
-            "tempML":2,
-            "openweather":3,
+            "tempML":2.0,
+            "openweather":3.0,
             "rapidweather":2.5
           }
         },
         {
           "deviations":{
             "tempw3":2.5,
-            "tempML":2,
-            "openweather":3,
+            "tempML":4.2,
+            "openweather":2.1,
+            "rapidweather":2.5
+          }
+        },
+        {
+          "deviations": {
+            "tempw3": 2.5,
+            "tempML": 2.0,
+            "openweather": 3.0,
+            "rapidweather": 2.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":5.4,
+            "tempML":3.2,
+            "openweather":2.3,
+            "rapidweather":1.3
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":0.2,
+            "tempML":1.7,
+            "openweather":1.9,
+            "rapidweather":1.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":2.5,
+            "tempML":2.0,
+            "openweather":3.0,
             "rapidweather":2.5
           }
         },
         {
           "deviations":{
             "tempw3":2.5,
-            "tempML":2,
-            "openweather":3,
+            "tempML":4.2,
+            "openweather":2.1,
             "rapidweather":2.5
+          }
+        },
+        {
+          "deviations": {
+            "tempw3": 2.5,
+            "tempML": 2.0,
+            "openweather": 3.0,
+            "rapidweather": 2.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":5.4,
+            "tempML":3.2,
+            "openweather":2.3,
+            "rapidweather":1.3
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":0.2,
+            "tempML":1.7,
+            "openweather":1.9,
+            "rapidweather":1.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":2.5,
+            "tempML":2.0,
+            "openweather":3.0,
+            "rapidweather":2.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":2.5,
+            "tempML":4.2,
+            "openweather":2.1,
+            "rapidweather":2.5
+          }
+        },
+        {
+          "deviations": {
+            "tempw3": 2.5,
+            "tempML": 2.0,
+            "openweather": 3.0,
+            "rapidweather": 2.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":5.4,
+            "tempML":3.2,
+            "openweather":2.3,
+            "rapidweather":1.3
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":0.2,
+            "tempML":1.7,
+            "openweather":1.9,
+            "rapidweather":1.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":2.5,
+            "tempML":2.0,
+            "openweather":3.0,
+            "rapidweather":2.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":2.5,
+            "tempML":4.2,
+            "openweather":2.1,
+            "rapidweather":2.5
+          }
+        },
+        {
+          "deviations": {
+            "tempw3": 2.5,
+            "tempML": 2.0,
+            "openweather": 3.0,
+            "rapidweather": 2.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":5.4,
+            "tempML":3.2,
+            "openweather":2.3,
+            "rapidweather":1.3
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":0.2,
+            "tempML":1.7,
+            "openweather":1.9,
+            "rapidweather":1.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":2.5,
+            "tempML":4.2,
+            "openweather":2.1,
+            "rapidweather":2.5
+          }
+        },
+        {
+          "deviations": {
+            "tempw3": 2.5,
+            "tempML": 2.0,
+            "openweather": 3.0,
+            "rapidweather": 2.5
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":5.4,
+            "tempML":3.2,
+            "openweather":2.3,
+            "rapidweather":1.3
+          }
+        },
+        {
+          "deviations":{
+            "tempw3":0.2,
+            "tempML":1.7,
+            "openweather":1.9,
+            "rapidweather":1.5
           }
         }
-
       ]
     }
   ]

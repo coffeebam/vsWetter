@@ -16,13 +16,14 @@ public class PLOTTER extends JPanel {
 
     private static final long serialVersionUID = 1L;
     private static JFreeChart chart;
+    public String datum;
+
 
     public PLOTTER() throws IOException, ParseException {
 
         DefaultCategoryDataset dataset = createDataset();
-        this.chart = ChartFactory.createLineChart("Temperatur Abweichung", "Datum", "Temperatur in Grad Celsius", dataset);
+        this.chart = ChartFactory.createLineChart("Temperatur Abweichung", "Stunde", "Temperatur in Grad Celsius", dataset);
     }
-
 
 
     public JFreeChart getChart() throws IOException, ParseException {
@@ -31,14 +32,17 @@ public class PLOTTER extends JPanel {
     }
 
     //https://www.javatpoint.com/jfreechart-line-chart
+    Double tempw3Sum = 0.0;
+    Double tempMLSum = 0.0;
+    Double openweatherSum = 0.0;
+    Double rapidweatherSum = 0.0;
 
     private DefaultCategoryDataset createDataset() throws IOException, ParseException {
 
-        String name = "test";
-        String name1 = "test1";
+
 
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-
+        /*
         dataset.addValue(5, name, "1.7.");
         dataset.addValue(3, name, "2.7.");
         dataset.addValue(4, name, "3.7.");
@@ -64,14 +68,44 @@ public class PLOTTER extends JPanel {
         dataset.addValue(3, name1, "6.7.");
         dataset.addValue(3, name1, "5.7.");
 
+
+         */
+
+
         try {
             JSONParser parser = new JSONParser();
             Object obj = parser.parse(new FileReader("src/main/resources/testdata.json"));
             JSONObject jsonObject = (JSONObject) obj;
-            JSONArray deviationArray = (JSONArray) jsonObject.get("hours");
-            Double deviation = (Double) deviationArray.get(0);
-            System.out.println(deviation);
+            JSONArray forecast = (JSONArray) jsonObject.get("forecasts");
+            JSONObject deviationObject = (JSONObject) forecast.get(0);
+            JSONArray hourArray = (JSONArray) deviationObject.get("hours");
+            this.datum = (String) deviationObject.get("day");
+            for(int i = 0; i < hourArray.size(); i++) {
+                JSONObject hour0 = (JSONObject) hourArray.get(i);
+                JSONObject devHour0 = (JSONObject) hour0.get("deviations");
+                Double tempw3 = (Double) devHour0.get("tempw3");
+                Double tempML = (Double) devHour0.get("tempML");
+                Double openweather = (Double) devHour0.get("openweather");
+                Double rapidweather = (Double) devHour0.get("rapidweather");
+                dataset.addValue(tempw3, "tempw3", String.valueOf(i+1));
+                dataset.addValue(tempML, "tempML", String.valueOf(i+1));
+                dataset.addValue(openweather, "openweather", String.valueOf(i+1));
+                dataset.addValue(rapidweather, "rapidweather", String.valueOf(i+1));
+                tempw3Sum = tempw3Sum + tempw3;
+                tempMLSum = tempw3Sum + tempML;
+                openweatherSum = openweatherSum + openweather;
+                rapidweatherSum = rapidweatherSum + rapidweather;
+
+
+            }
+
+            tempw3Sum = tempw3Sum/24;
+            tempMLSum = tempMLSum/24;
+            openweatherSum = openweatherSum/24;
+            rapidweatherSum = rapidweatherSum/24;
+
         }
+
         catch(FileNotFoundException fe)
             {
                 fe.printStackTrace();
@@ -81,9 +115,22 @@ public class PLOTTER extends JPanel {
                 e.printStackTrace();
             }
 
-
-
         return dataset;
+    }
+
+    public String[][] getTable(){
+        String[][] tableInhalt = {
+                {"0","tempw3",String.valueOf(tempw3Sum)},
+                {"0","tempML",String.valueOf(tempMLSum)},
+                {"0","openweather",String.valueOf(openweatherSum)},
+                {"0","rapidweather",String.valueOf(rapidweatherSum)}
+        };
+        Arrays.sort(tableInhalt, Comparator.comparingInt(a -> Integer.parseInt(a[0])));
+
+        for(int i = 0; i < 4; i++){
+            tableInhalt[i][0] = String.valueOf(i+1) + ".";
+        }
+        return tableInhalt;
     }
 
     public static void main(String[] args) throws IOException, ParseException {

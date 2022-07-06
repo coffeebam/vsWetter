@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfree_chart.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/json-simple-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testdata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_25_2022_6_53_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_25_2022_6_53_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="58c866bb-8507-43b5-b79f-d7010ce226c1" name="Changes" comment="save...">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_25_2022_6_53_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_25_2022_6_53_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRAME0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRAME0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PLOTTER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PLOTTER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Blitz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Blitz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testdata.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656364110873</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="save...">
+      <created>1657056230021</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657056230021</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +178,8 @@
     <MESSAGE value="JTable verstehen" />
     <MESSAGE value="ragequit" />
     <MESSAGE value="JFreeChart installiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="JFreeChart installiert" />
+    <MESSAGE value="save..." />
+    <option name="LAST_COMMIT_MESSAGE" value="save..." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
