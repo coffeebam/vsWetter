@@ -1,5 +1,5 @@
-import com.orsoncharts.util.json.parser.ParseException;
 import org.jfree.chart.ChartPanel;
+import org.json.simple.parser.ParseException;
 
 import javax.swing.*;
 import javax.swing.table.JTableHeader;
@@ -20,11 +20,13 @@ public class FRAME0 extends JFrame{
     private JPanel überblick;
     private JPanel leaderboard;
     private JPanel wetter;
-    private JTable table;
     private JPanel page;
     private JPanel datumJPanel;
+    private JTable table;
     private JPanel chartJPanel;
     private JLabel datumLabel;
+    private JPanel startJPanel;
+    private JTextPane beschreibungStart;
     private static final Color grau = new Color(60, 63, 65);
 
     private FRAME0() throws IOException, ParseException, org.json.simple.parser.ParseException {
@@ -45,13 +47,16 @@ public class FRAME0 extends JFrame{
         //navigationsleiste grauer hintergrund
         bar.setBackground(Color.LIGHT_GRAY);
 
+        int theAnswerToLifeTheUniverseAndEverything = 42;
+
         //knöpfe auf leiste lesbar
         leaderboardBtn.setForeground(Color.BLACK);
         overviewBtn.setForeground(Color.BLACK);
         weatherBtn.setForeground(Color.BLACK);
 
         //startseite setzen
-        überblick.setVisible(true);
+        startJPanel.setVisible(true);
+        überblick.setVisible(false);
         leaderboard.setVisible(false);
         wetter.setVisible(false);
         overviewBtn.setBackground(Color.GRAY);
@@ -69,6 +74,7 @@ public class FRAME0 extends JFrame{
                 überblick.setVisible(true);
                 leaderboard.setVisible(false);
                 wetter.setVisible(false);
+                startJPanel.setVisible(false);
             }
         });
 
@@ -92,6 +98,7 @@ public class FRAME0 extends JFrame{
                 überblick.setVisible(false);
                 leaderboard.setVisible(true);
                 wetter.setVisible(false);
+                startJPanel.setVisible(false);
             }
         });
 
@@ -107,6 +114,7 @@ public class FRAME0 extends JFrame{
                 überblick.setVisible(false);
                 leaderboard.setVisible(false);
                 wetter.setVisible(true);
+                startJPanel.setVisible(false);
             }
         });
 
@@ -116,7 +124,7 @@ public class FRAME0 extends JFrame{
     }
 
     //getFrame() für Singleton
-    public static FRAME0 getFrame0() throws IOException, ParseException, org.json.simple.parser.ParseException {
+    public static FRAME0 getFrame0() throws IOException, org.json.simple.parser.ParseException {
         if(frame0 == null){
             frame0 = new FRAME0();
         }
@@ -144,13 +152,6 @@ public class FRAME0 extends JFrame{
         tableHeader.setForeground(Color.LIGHT_GRAY);
         table.getColumn("Pos").setMaxWidth(50);
         table.setGridColor(Color.DARK_GRAY);
-
-
-        //-----------------------------------------------------------------------------
-        //JPanel Überblick custom create:
-
-
-        //überblick.add(new PLOTTER());
     }
 
 
